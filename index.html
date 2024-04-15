@@ -1,7 +1,9 @@
+<!DOCTYPE html>
 <html>
 <head>
    <title>Selamat Ulang Tahun</title>
-   <style>* {
+   <style>
+   * {
    margin: 0;
    padding: 0;
    }
@@ -17,11 +19,43 @@
    text-align: center;
    color: white;
    }
+
+   /* Styling for the container div */
+   .container {
+   position: relative;
+   text-align: center;
+   }
+
+   /* Styling for the image */
+   img {
+   display: block;
+   margin: 0 auto; /* Center the image */
+   margin-top: 50px; /* Adjust the margin top as needed */
+   }
+
+   /* Styling for the marquee text */
+   .marquee-text {
+   position: absolute;
+   bottom: 20px; /* Adjust the position as needed */
+   width: 100%;
+   color: white;
+   font-size: 20px;
+   }
+
    </style>
 </head>
 <body>
-	<h1>Selamat Ulang Tahun Mama</h2>
-   <script>var rnd = Math.random, flr = Math.floor;
+   <div class="container">
+      <h1>Selamat Ulang Tahun Mama</h1>
+      <!-- Add your image with the src attribute pointing to the image file -->
+      <img src="mama.jpg" alt="Foto Ulang Tahun Mama">
+      <div class="marquee-text">
+         <marquee behavior="alternate" scrollamount="5" width="630">Selamat ulang tahun ma. Semoga panjang umur, murah rejeki, dan sehat selalu.</marquee>
+      </div>
+   </div>
+
+   <script>
+   var rnd = Math.random, flr = Math.floor;
    let canvas = document.createElement('canvas');
    
    document.getElementsByTagName('body')[0].appendChild(canvas);
@@ -204,14 +238,3 @@
    </script>
 </body>
 </html>
-
-<html>
-	<head>
-		<body>
-			<body bgcolor="black"><center><br>
-			<font face="Abel" size="6px" color="grey"><b></b>
-			<br><font size="3px">
-			<font color="white">[ </font><marquee scrollamount="5" width="630" height="20" behavior="alternate">Selamat ulang tahun ma. Semoga panjang umur, murah rejeki, dan sehat selalu.</marquee><font color="white"> ]</font>
-			<br><br><font size="3px" face="Ubuntu Condensed">
-		</body>
-	</font>
